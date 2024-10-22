@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utpal Raj's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/940b196cf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h1>Hi, I am <span class="highlight">Utpal Raj</span>, <br> a keen tech enthusiast.</h1>
+        </div>
+    </div>
+
+    <!-- -------------------------------------ABOUT---------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pp.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>
+                        I am a B.Tech student specializing in Computer Science and Engineering with a focus on Data Science. My 
+                        education has equipped me with a strong foundation in key programming languages and development tools, 
+                        alongside a solid understanding of data analytics and computational methods. I am driven by a passion for 
+                        technology and a commitment to advancing my skills through continuous learning and practical experience. 
+                        My goal is to apply my expertise to tackle real-world problems, contribute to innovative solutions, and make 
+                        a significant impact in the technology sector.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links" data-tab="skills">Skills</p>
+                        <p class="tab-links" data-tab="education">Education</p>
+                        <p class="tab-links" data-tab="projects">Projects</p>
+                    </div>
+                    <div class="tab-contents">
+                        <div class="tab-content" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C, C++, Python, Java</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Data Science</span><br>Data Analysis, Machine Learning</li>
+                                <li><span>Developer Tools</span><br>Git, SQL, IDEs (VS Code, IntelliJ IDEA)</li>
+                                <li><span>Frameworks & Libraries</span><br>TensorFlow, OpenCV, Java Swing</li>
+                                <li><span>Soft Skills</span><br>Problem-Solving, Communication, Leadership, Team Collaboration</li>                                
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2023 - Current</span><br><span>B.Tech in Computer Science</span><br>SRM Institute of Science & Technology, Kattankulathur</li>
+                                <li><span>2019 - 2022</span><br><span>Intermediate (CBSE)</span><br>Saint Thomas Senior Secondary School</li>
+                                <li><span>2017 - 2019</span><br><span>Matriculation (CBSE)</span><br>Saint Thomas Senior Secondary School</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="projects">
+                            <ul>
+                                <li><span>August 2024</span><br><span>Text Comparison Tool</span><br>Developed a Python-based GUI tool for comparing text files with<br> features for word-by-word comparisons and similarity percentages.<br> Tools used: Python, Tkinter, nltk, difflib.</li>
+                                <li><span>September 2024</span><br><span>Age and Gender Detection System</span><br>Created a real-time system using OpenCV and deep learning models<br> to detect age, gender, and facial landmarks from video feeds. <br>Tools used: Python, OpenCV, TensorFlow, Caffe.</li>
+                                <li><span>October 2024</span><br><span>Simple Calculator</span><br>Developed a simple calculator using Java and Java Swing to<br> perform simple and basic scientific calculations.<br> Tools used: JavaSDK, Java Swing.</li>                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------My Interests-------------------------------------------------->
+
+    <div id = "interests">
+        <div class = "container">
+            <h1 class = "sub-title"> My Interests </h1>
+            <div class = "interests-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>
+                        Data Structures
+                    </h2>
+                    <p>
+                        Dedicated to mastering data structures, I focus on building efficient algorithms and solving real-world challenges through optimized solutions. Always eager to learn and apply new techniques in practical applications.
+                    </p>
+                    <a href="https://leetcode.com/u/raj_1609utpal/">See More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>
+                        Web Development
+                    </h2>
+                    <p>
+                        Driven by a passion for web development, I’m focused on crafting intuitive and dynamic websites that merge creativity with seamless user experiences.
+                    </p>
+                    <a href="http://127.0.0.1:5500/index.html#">See More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>
+                        Machine Learning
+                    </h2>
+                    <p>
+                        With a growing passion for machine learning, I am dedicated to mastering algorithms and developing innovative models that transform data into impactful solutions.
+                    </p>
+                    <a href="https://github.com/utpal16raj09/Age_Gender_Detection">See More</a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+<!----------------------------------------------Portfolio------------------------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="projects">
+                <img src="images/ttt.png" alt="Text Comparison Tool">
+                <div class="layer">
+                    <h3>Text Comparison Tool</h3>
+                    <p>The tool allows users to compare two text files or
+                         manually entered texts, providing a similarity percentage
+                          and highlighting identical words in both texts.</p>
+                    <a href="https://github.com/utpal16raj09/Text_Comparison_Tool"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="images/fgd.png" alt="Project 2">
+                <div class="layer">
+                    <h3>Age & Gender Detection Tool</h3>
+                    <p>It captures video from a webcam, detects faces, 
+                        and predicts the age and gender of each detected face,
+                         while highlighting the detected faces and predicting their attributes.</p>
+                    <a href="https://github.com/utpal16raj09/Age_Gender_Detection"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="images/calc.png" alt="Project 3">
+                <div class="layer">
+                    <h3>Simple Calculator</h3>
+                    <p>A simple scientific calculator built using Java Swing.
+                         This application provides a user-friendly interface for performing
+                          basic arithmetic operations and basic scientific calculations.</p>
+                    <a href="https://github.com/utpal16raj09/scientific_calcl"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--------------------------------------------------Contact---------------------------------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>utpalraj1609@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-7814967881</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/raj.05.16?igsh=MWx4dnJsNzQyYzFhdA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/utpal_raj1609"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="www.linkedin.com/in/utpal-raj-0380b6284"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/utpal16raj09"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Utpal's Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your E-Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Utpal Raj<br> All rights reserved. </p>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        document.querySelectorAll('.tab-links').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const currentTab = this.getAttribute('data-tab');
+                const isActive = this.classList.contains('active-link');
+
+                // Remove active class and hide all tab contents
+                document.querySelectorAll('.tab-links').forEach(t => t.classList.remove('active-link'));
+                document.querySelectorAll('.tab-content').forEach(c => {
+                    c.classList.remove('active-content');
+                    c.style.display = 'none';
+                });
+
+                // Toggle the clicked tab
+                if (!isActive) {
+                    this.classList.add('active-link');
+                    document.getElementById(currentTab).classList.add('active-content');
+                    document.getElementById(currentTab).style.display = 'block';
+                }
+            });
+        });
+
+        // Display the default tab
+        document.querySelector('.tab-links').click();
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzJXnspV7GQdqJzsEiKU4etTx4O47Wpm9nRpMiriwL_NKOi8qjaARM7qmapg9GW2tH3EA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
